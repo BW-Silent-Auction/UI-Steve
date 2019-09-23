@@ -47,6 +47,10 @@ header {
    background-color: white;
 }
 
+header #logo {
+   height: 3.5rem;
+}
+
 header, nav ul {
    width: 100%;
    display: flex;
