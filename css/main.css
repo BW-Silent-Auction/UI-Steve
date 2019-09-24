@@ -48,7 +48,11 @@ header {
 }
 
 header #logo {
-   height: 3.5rem;
+   height: 6rem;
+}
+
+header #logo img {
+   height: 100%;
 }
 
 header, nav ul {
@@ -58,8 +62,13 @@ header, nav ul {
    justify-content: space-evenly;
 }
 
+.w3-round-xlarge:hover,
+.w3-round-xxlarge:hover {
+   border: 1px solid #66b3ff;
+}
+
 nav {
-   width: 80%;
+   width: 90%;
 }
 
 main button {
@@ -73,6 +82,10 @@ main {
    flex: 1;
    width: 100%;
    overflow: auto;
+}
+
+.w3-ul {
+   margin-bottom: 2rem;
 }
 
 main article {
