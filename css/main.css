@@ -91,6 +91,36 @@ main {
 main article {
    margin: 0.5rem 0;
    padding: 0.4rem;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-evenly;
+}
+
+main article .list-wrapper {
+   flex-direction: column;
+   width: 40%;
+   align-self: center;
+   margin: 2rem 0;
+}
+
+main article .list-wrapper h2 {
+   display: inline-block;
+   padding-bottom: 1rem;
+   margin-bottom: 1rem;
+   border-bottom: 1px solid #66b3ff;
+}
+
+main article .img-wrapper {
+   width: 30%;
+   align-self: center;
+}
+
+main article#bidders .img-wrapper {
+   width: 20%;
+}
+
+main article .img-wrapper img {
+   width: 100%;
 }
 
 main section {
@@ -110,7 +140,7 @@ main section p {
    justify-content: center;
 }
 
-main section.reverse {
+main .reverse {
    flex-direction: row-reverse;
 }
 
@@ -132,6 +162,11 @@ main section.reverse .about-wrapper {
    width: 100%;
 }
 
+section.w3-card,  section.w3-card-4,
+article.w3-card-2, article.w3-card-4 {
+   margin-bottom: 3rem;
+}
+
 footer {
    display: flex;
    width: 100%;
@@ -149,13 +184,13 @@ footer {
    div#page-content {
       width: 98%;
    }
-   main section {
+   main section, main article {
       flex-direction: column;
    }
    main section.reverse {
       flex-direction: column;
    }
-   .about-wrapper {
+   .about-wrapper, main article div.list-wrapper{
       width: 100%;
    }
 }
