@@ -1935,6 +1935,12 @@ main section a {
 main section p {
   justify-content: center;
   align-self: center;
+  width: 40%;
+}
+@media (max-width: 850px) {
+  main section p {
+    width: 98%;
+  }
 }
 @media (max-width: 850px) {
   main section {
@@ -1960,7 +1966,7 @@ main section.reverse .about-wrapper {
 .about-wrapper {
   display: flex;
   flex-flow: column nowrap;
-  width: 60%;
+  width: 58%;
 }
 .about-pic-wrapper {
   width: 40%;

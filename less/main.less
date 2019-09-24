@@ -56,7 +56,10 @@ main {
       p { 
          justify-content: center;
          align-self: center;
-      }
+         width: 40%;
+         
+         @media @mobile { width: 98%; }
+      } // p
       
       @media @mobile { flex-direction: column; }
    } // section
