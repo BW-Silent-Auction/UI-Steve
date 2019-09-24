@@ -1934,6 +1934,7 @@ main section a {
 }
 main section p {
   justify-content: center;
+  align-self: center;
 }
 @media (max-width: 850px) {
   main section {
