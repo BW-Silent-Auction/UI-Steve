@@ -1946,6 +1946,12 @@ main article .img-wrapper img {
 main article#summary p {
   padding: 2rem;
 }
+main article#summary p #join {
+  color: #66b3ff;
+}
+main article#summary p #join:hover {
+  cursor: pointer;
+}
 main article#bidders .img-wrapper {
   width: 20%;
 }

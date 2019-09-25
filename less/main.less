@@ -52,7 +52,15 @@ main {
          img { width: 100%; }
       } // .img-wrapper
 
-      &#summary p{ padding: 2rem; }
+      &#summary p{ 
+         padding: 2rem;
+         
+         #join {
+            color: @highlightColor;
+            
+            &:hover { cursor: pointer; }
+         }
+      }
 
       &#bidders .img-wrapper { width: 20%; }
 
