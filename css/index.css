@@ -1947,7 +1947,7 @@ main article#summary p {
   padding: 2rem;
 }
 main article#summary p #join {
-  color: #66b3ff;
+  color: #0080ff;
 }
 main article#summary p #join:hover {
   cursor: pointer;
@@ -1968,7 +1968,7 @@ main section {
   line-height: 3rem;
 }
 main section a {
-  color: #66b3ff;
+  color: #0080ff;
   font-weight: 800;
 }
 main section p {
