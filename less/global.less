@@ -2,7 +2,7 @@
 html { font-size: 62.5%; }
 
 body {
-   font-size: 1.6rem;
+   font-size: 1.8rem;
    width: 100%;
    line-height: 2rem;
    margin: 0;
@@ -14,6 +14,14 @@ h1 {
    font-size: 3.4rem;
    margin: 4rem 0;
    text-align: center;
+   color: white;
+   animation: animate 4s infinite;
+}
+
+@keyframes animate {
+   0% { text-shadow: none; }
+   50% { .textShadow(); }
+   100% { text-shadow: none; }
 }
 
 h2 {
@@ -36,5 +44,5 @@ div#page-content {
    background-color: white;
    overflow: hidden;
    
-   @media @mobile { width: 98%; }
+   @media @tablet { width: 100%; }
 }

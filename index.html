@@ -11,29 +11,29 @@
 
       <script src="js/index.js"></script>
    </head>
-   
+
    <body>
       <!--================= Page Content =================-->
       <div id="page-content">
-         <header class="w3-card-4 w3-metro-light-blue">
-            
+         <header class="w3-card-4">
+
             <!--================= Logo =================-->
             <div id="logo">
-               <a href="#"><img  class="w3-btn w3-round-xxlarge w3-ripple" src="/img/SeekClipart.com_quiet-sign-clip-art_2236046.png" alt="silent auction gavel" /></a>
+               <a href="#"><img  class="nav-btn w3-round-xxlarge w3-ripple" src="/img/SeekClipart.com_quiet-sign-clip-art_2236046.png" alt="silent auction gavel" /></a>
             </div>
             <!--================= Nav =================-->
             <nav>
                <ul>
                   <a href="about.html">
-                     <li id="about" class="w3-btn w3-round-xlarge w3-ripple">About</li>
+                     <li id="about" class="nav-btn w3-round-xlarge w3-ripple">About</li>
                   </a>
-                  
+
                   <a href="#">
-                     <li id="browse" class="w3-btn w3-round-xlarge w3-ripple">Browse</li>
+                     <li id="browse" class="nav-btn w3-round-xlarge w3-ripple">Browse</li>
                   </a>
-                  
+
                   <a href="https://silent-auction.bw-silent-auction.now.sh/">
-                     <li id="signin" class="w3-btn w3-round-xlarge w3-ripple">Sign in</li>
+                     <li id="signin" class="nav-btn w3-round-xlarge w3-ripple">Sign in</li>
                   </a>
                </ul>
             </nav>
@@ -41,58 +41,63 @@
 
          <!--================= Main =================-->
          <main>
-               <h1>Silent Auction</h1>
+            <h1>Silent Auction</h1>
+
+            <!--================= Auctioneers =================-->
+            <article id="auctioneers" class="w3-card-4 w3-metro-light-blue">
+               <div class="list-wrapper">
+                  <h2>Auctioneers</h2>
+
+                  <ul class="w3-ul w3-card-2">
+                     <li class="w3-padding">Easily keep track of every listing.</li>
+
+                     <li class="w3-padding">Set reserve pricing to ensure your minimum goals are met</li>
+
+                     <li class="w3-padding">You have complete control over how long your items are listed.</li>
+
+                     <li class="w3-padding">See the bids for your items as they appear in realtime.</li>
+                  </ul>
+
+                  <button id="seller-sign-up" class="w3-round-large w3-border w3-border-blue w3-ripple" onclick="location.href='https://silent-auction.bw-silent-auction.now.sh/';">List your items today!</button>
+               </div>
+
+               <div class="img-wrapper">
+                  <img src="img/4YjQH4rSdJBxLd7i2MnmVnErC-auction.png" alt="" />
+               </div>
+            </article>
+
+            <!--================= Bidders =================-->
+            <article id="bidders" class="reverse w3-card">
+               <div class="list-wrapper">
+                  <h2>Bidders</h2>
+
+                  <ul class="w3-ul w3-card-2">
+                     <li class="w3-padding">Easily browse all available listings.</li>
+
+                     <li class="w3-padding">Each item is listed with the most important details easily viewable.</li>
+
+                     <li class="w3-padding">Every item has an easily accessible bid button to allow immediately placing a bid.</li>
+
+                     <li class="w3-padding">See a listing of all the auctions you have bid on.</li>
+                  </ul>
+
+                  <button id="bidder-sign-up" class="w3-round-large w3-border w3-border-blue w3-ripple" onclick="location.href='https://silent-auction.bw-silent-auction.now.sh/';">Start bidding now!</button>
+               </div>
+
+               <div class="img-wrapper">
+                  <img src="img/kisspng-public-auction-bidding-auction-sniping-clip-art-auction-5ac1d974bbeea4.7648073815226535567698-bid.png" alt="" />
+               </div>
+            </article>
             
-               <!--================= Auctioneers =================-->
-               <article id="auctioneers" class="w3-card-4 w3-metro-light-blue">
-                  <div class="list-wrapper">
-                     <h2>Auctioneers</h2>
-                     
-                     <ul class="w3-ul w3-card-2">
-                        <li class="w3-padding">Easily keep track of every listing.</li>
-
-                        <li class="w3-padding">Set reserve pricing to ensure your minimum goals are met</li>
-
-                        <li class="w3-padding">You have complete control over how long your items are listed.</li>
-
-                        <li class="w3-padding">See the bids for your items as they appear in realtime.</li>
-                     </ul>
-                  
-                     <button id="seller-sign-up" class="w3-btn w3-round-large w3-border w3-border-blue w3-ripple" onclick="location.href='https://silent-auction.bw-silent-auction.now.sh/';">List your items today!</button>
-                  </div>
-                  
-                  <div class="img-wrapper">
-                     <img src="img/4YjQH4rSdJBxLd7i2MnmVnErC-auction.png" alt="" />
-                  </div>
-               </article>
-
-               <!--================= Bidders =================-->
-               <article id="bidders" class="reverse w3-card">
-                  <div class="list-wrapper">
-                     <h2>Bidders</h2>
-                     
-                     <ul class="w3-ul w3-card-2">
-                        <li class="w3-padding">Easily browse all available listings.</li>
-
-                        <li class="w3-padding">Each item is listed with the most important details easily viewable.</li>
-
-                        <li class="w3-padding">Every item has an easily accessible bid button to allow immediately placing a bid.</li>
-
-                        <li class="w3-padding">See a listing of all the auctions you have bid on.</li>
-                     </ul>
-
-                     <button id="bidder-sign-up" class="w3-btn w3-round-large w3-border w3-border-blue w3-ripple" onclick="location.href='https://silent-auction.bw-silent-auction.now.sh/';">Start bidding now!</button>
-                  </div>
-                  
-                  <div class="img-wrapper">
-                     <img src="img/kisspng-public-auction-bidding-auction-sniping-clip-art-auction-5ac1d974bbeea4.7648073815226535567698-bid.png" alt="" />
-                  </div>
-               </article>
+            <article id="summary" class="w3-card-4 w3-metro-light-blue">
+               <h2>Our Mission</h2>
+               <p>At Silent Auction, our goal is to be your one stop shop. It doesn't matter if you have a product to sell and you're looking to get the best possible offer, or if you're just browsing for good deals.  We have something for everyone!  Create or Browse our listing today and get started on your journey of discovery with everything we have to offer!</p>
+            </article>
          </main>
-         
+
          <!--================= Footer =================-->
-         <footer class="w3-card-4 w3-metro-light-blue">
-            <p>&copy;copyright Silent Auction 2019</p>
+         <footer class="w3-card-4">
+            <p>&copy;copyright 2019 Silent Auction, All rights reserved</p>
          </footer>
       </div>
    </body>

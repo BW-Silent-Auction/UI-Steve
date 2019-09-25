@@ -1798,7 +1798,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   width: 100%;
   line-height: 2rem;
   margin: 0;
@@ -1809,6 +1809,19 @@ h1 {
   font-size: 3.4rem;
   margin: 4rem 0;
   text-align: center;
+  color: white;
+  animation: animate 4s infinite;
+}
+@keyframes animate {
+  0% {
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: 0 0.8rem 1.6rem rgba(0, 128, 255, 0.6), 0 0.6rem 2rem rgba(0, 128, 255, 0.6);
+  }
+  100% {
+    text-shadow: none;
+  }
 }
 h2 {
   font-size: 2.4rem;
@@ -1833,9 +1846,9 @@ div#page-content {
   background-color: white;
   overflow: hidden;
 }
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
   div#page-content {
-    width: 98%;
+    width: 100%;
   }
 }
 header {
@@ -1845,6 +1858,8 @@ header {
   padding: 1rem 0;
   line-height: 4rem;
   border-bottom: 1px solid #66b3ff;
+  background-color: #341C09;
+  color: #eff4ff;
 }
 header #logo {
   height: 6rem;
@@ -1870,6 +1885,8 @@ footer {
   justify-content: center;
   align-items: center;
   border-top: 1px solid #66b3ff;
+  background-color: #341C09;
+  color: #eff4ff;
 }
 main {
   display: flex;
@@ -1881,6 +1898,19 @@ main {
 }
 main button {
   margin: 0.3rem 0;
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+main button:hover {
+  box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 128, 255, 0.2), 0 0.6rem 2rem 0 rgba(0, 128, 255, 0.2);
 }
 main article {
   margin: 0.5rem 0;
@@ -1889,19 +1919,19 @@ main article {
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
+main article h2 {
+  display: inline-block;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #66b3ff;
+}
 main article .list-wrapper {
   flex-direction: column;
   width: 40%;
   align-self: center;
   margin: 2rem 0;
 }
-main article .list-wrapper h2 {
-  display: inline-block;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid #66b3ff;
-}
-@media (max-width: 850px) {
+@media (max-width: 800px) {
   main article .list-wrapper {
     width: 100%;
   }
@@ -1913,13 +1943,16 @@ main article .img-wrapper {
 main article .img-wrapper img {
   width: 100%;
 }
-@media (max-width: 850px) {
-  main article {
-    flex-direction: column;
-  }
+main article#summary p {
+  padding: 2rem;
 }
 main article#bidders .img-wrapper {
   width: 20%;
+}
+@media (max-width: 800px) {
+  main article {
+    flex-direction: column;
+  }
 }
 main section {
   display: flex;
@@ -1937,12 +1970,12 @@ main section p {
   align-self: center;
   width: 40%;
 }
-@media (max-width: 850px) {
+@media (max-width: 800px) {
   main section p {
     width: 98%;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 800px) {
   main section {
     flex-direction: column;
   }
@@ -1950,7 +1983,7 @@ main section p {
 main .reverse {
   flex-direction: row-reverse;
 }
-@media (max-width: 850px) {
+@media (max-width: 800px) {
   main section.reverse {
     flex-direction: column;
   }
@@ -1958,7 +1991,7 @@ main .reverse {
 main section.reverse .about-wrapper {
   align-items: flex-end;
 }
-@media (max-width: 850px) {
+@media (max-width: 800px) {
   main section.reverse .about-wrapper {
     width: 100%;
   }
@@ -1986,4 +2019,10 @@ article.w3-card-4 {
 .w3-round-xlarge:hover,
 .w3-round-xxlarge:hover {
   border: 1px solid #66b3ff;
+}
+.nav-btn {
+  padding: 0.8rem 1.6rem;
+}
+.nav-btn:hover {
+  box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 128, 255, 0.4), 0 0.6rem 2rem 0 rgba(0, 128, 255, 0.4);
 }
