@@ -1879,9 +1879,9 @@ header nav ul {
 }
 footer {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   width: 100%;
-  height: 4rem;
+  height: 6rem;
   justify-content: center;
   align-items: center;
   border-top: 1px solid #66b3ff;
