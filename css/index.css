@@ -1800,7 +1800,7 @@ html {
 body {
   font-size: 1.8rem;
   width: 100%;
-  line-height: 2rem;
+  line-height: 2.5rem;
   margin: 0;
   overflow: hidden;
   background-color: #505962;
@@ -1970,7 +1970,7 @@ main section {
 }
 main section a {
   color: #0080ff;
-  font-weight: 800;
+  font-weight: 600;
 }
 main section p {
   justify-content: center;
@@ -2017,7 +2017,8 @@ main section.reverse .about-wrapper {
 section.w3-card,
 section.w3-card-4,
 article.w3-card-2,
-article.w3-card-4 {
+article.w3-card-4,
+article.w3-card {
   margin-bottom: 3rem;
 }
 .w3-ul {
