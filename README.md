@@ -1,4 +1,4 @@
-https://build-week-silent-auction.netlify.com/about.html
+https://build-week-silent-auction.netlify.com/
 
 # UI-Steve
 Marketing page
